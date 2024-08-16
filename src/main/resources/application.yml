@@ -42,6 +42,15 @@ mail:
   password: vecgbdaowuqhufxw
   protocol: smtp
   trust: smtp.gmail.com
+twilio:
+  url: https://api.twilio.com/2010-04-01/Accounts
+  account-sid: ACf702447b563a06f2a53c2f9ae0bb6813
+  auth-token: f4d8f65e361c419ed30dcace779cda17
+  from: +19787407680
+cloudinary:
+  cloud-name: dpquxefcn
+  api-key: 212364935335864
+  secret-key: zSOBcxGeVlyjZQ9R8Hlb8StPRT8
 custom:
   properties:
     province-url: https://vapi.vnappmob.com
