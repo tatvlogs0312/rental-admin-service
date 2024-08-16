@@ -1,0 +1,48 @@
+server:
+  port: 65432
+  servlet:
+    context-path: /administration-service
+spring:
+  application:
+    name: administration-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/rent
+    username: postgres
+    password: admin@123
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+  data:
+    redis:
+      host: localhost
+      port: 6379
+springdoc:
+  api-docs:
+    enabled: true
+    path: /api-docs
+  swagger-ui:
+    path: /api-views
+key-cloak:
+  url: http://localhost:8890
+  client-id: rental
+  realms: rental
+  username: superuser
+  password: superuser
+rsa:
+  public_key: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC6D0nv6WslkIioFwQCgdZPIorFev6Pz0o+utW/9Wuga3Md1esEepIx5M2dfHUGmBwXcQNStbW4j4TdIShnmmfuzXAoLMgUUPG0h1NzHNgq8y5y/jfZnmGX6pngOiIW4QyWU17B7I/BTgxRrKgcmmVm+t/2hJCYJpJm/yE2fLGE6wIDAQAB
+  private_key: MIICeAIBADANBgkqhkiG9w0BAQEFAASCAmIwggJeAgEAAoGBALoPSe/payWQiKgXBAKB1k8iisV6/o/PSj661b/1a6Brcx3V6wR6kjHkzZ18dQaYHBdxA1K1tbiPhN0hKGeaZ+7NcCgsyBRQ8bSHU3Mc2CrzLnL+N9meYZfqmeA6IhbhDJZTXsHsj8FODFGsqByaZWb63/aEkJgmkmb/ITZ8sYTrAgMBAAECgYEApgiMr1X58pynBnD7eA1LJHUrpwyZ69VMaOwrYNBuScp5AM/rmKSUn4eRYQ82EztcHiMQlxdmYZtZMkermcB1K1/o9wD40D/3AICFN+cj8gtmUhfSRvkNHml3Rnd8SM+D0e0BGcRQh/Nh+YoYozy6agl5YhktJnKVNxPDCGzI8EkCQQD+qWPVYUyBjDZDJE9gM5TnlC/lsInluN8belwRhsA2T/GyD7npAOvo3mNlNdMRq7Pxi3NoHObt1EBzOio88+J1AkEAuwma3cuezd8+Fn6jlZSHevt/iHtXHPuhjvc+uM+D4IJ/N76h8hURZDU9xFOpcuJM208us0++KYhyS+WGEjgd3wJBALpSmTav39gRDEqHsIPEebgOFhVJ2zr2zlY+akpwewXB7CbJls5B3FkfDT4p6WpOZHPgAeo060krOJSWA/1gu1kCQENRfa/+rbWjeBFYm0AnKWwWQRy6Z+xClS+Dxct2xRx1W5yQvHEJLC1JDGYxRnfXA5qbsU9QkD0aoyi1/79m+zkCQQCiKVLWp4x6iQDhrJLq9FDbXiSwWndw0/YB6iun/gBVuG7thZbMbf3VgVBIUSn4b0if4Eg/UneO4HdSxF7Oclxm
+mail:
+  host: smtp.gmail.com
+  port: 587
+  username: tuantawork001@gmail.com
+  password: vecgbdaowuqhufxw
+  protocol: smtp
+  trust: smtp.gmail.com
+custom:
+  properties:
+    province-url: https://vapi.vnappmob.com
+    cmis-url: http://localhost:65431/cmis-service
